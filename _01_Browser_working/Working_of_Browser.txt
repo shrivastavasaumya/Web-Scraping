@@ -1,0 +1,74 @@
+Web Scraping:-
+-------------
+
+Involves programmatically extracting data from websites.
+
+
+Example :-
+How a Browser Works (Amazon Example)
+
+
+When you type [www.amazon.com](http://www.amazon.com) in your browser, the following steps happen:
+
+
+User
+  |
+  v
+Type: www.amazon.com
+  |
+  v
+Browser (Chrome, Edge, Firefox)
+  |
+  v
+DNS Server
+(Convert amazon.com → IP Address)
+  |
+  v
+Amazon Web Server
+(Receives the request)
+  |
+  v
+Server Processes Request
+(Fetches homepage, products, images, etc.)
+  |
+  v
+HTML + CSS + JavaScript Sent Back
+  |
+  v
+Browser Renders the Web Page
+  |
+  v
+Amazon Homepage Appears
+
+
+
+Inshort :-
+
+1. 'User' enters `www.amazon.com` in the browser.
+2. 'Browser' sends a request to find Amazon's IP address using a 'DNS server'.
+3. 'DNS' returns Amazon's IP address.
+4. The browser sends an 'HTTP/HTTPS request' to the 'Amazon server'.
+5. The 'Amazon server' processes the request and prepares the webpage.
+6. The server sends back 'HTML, CSS, JavaScript, images, and other files'.
+7. The 'browser renders' these files and displays the Amazon homepage.
+
+
+# One-Line Flow
+
+User
+  |
+Browser
+  |
+DNS
+  |
+Amazon Server
+  |
+HTML + CSS + JavaScript
+  |
+Browser
+  |
+Amazon Website Displayed
+
+
+In short:
+Browser → Finds Server (DNS) → Sends Request → Server Responds → Browser Displays the Website.

@@ -1,0 +1,27 @@
+
+Amazon Product Page
+        |
+        +--> HTML  → Product title, buttons, sections
+        |
+        +--> CSS   → Colors, layout, fonts
+        |
+        +--> JavaScript → Add to Cart, Search, Image Zoom
+        |
+        +--> Images → Product photos
+        |
+        +--> JSON/API → Price, stock, reviews
+        |
+        +--> Fonts → Amazon's custom text style
+        |
+        +--> Cookies → Keeps you logged in and remembers your cart
+
+
+In Brief :-
+
+HTML → Structure
+CSS → Design
+JavaScript → Functionality
+Images/Videos → Visual content
+JSON/API → Dynamic data
+Fonts → Text appearance
+Cookies → User session and preferences
