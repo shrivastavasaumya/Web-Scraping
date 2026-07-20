@@ -1,0 +1,11 @@
+Web Scraping :-
+ 
+There are many popular Python libraries for web scraping, the most commonly used 
+ones are: 
+1. requests   - Used to download the webpage i.e. HTML 
+
+2. BeautifulSoup - Parses & extracts data from HTML (useful for static HTML) 
+    We use requests & BeautifulSoup together. 
+
+3. Selenium - Automate a browser to load dynamic JS pages - optional alternative 
+    to (requests + BeautifulSoup) in case of dynamic websites.
