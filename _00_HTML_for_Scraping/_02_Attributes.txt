@@ -1,0 +1,87 @@
+HTML Attributes (Web Scraping)
+
+HTML elements can have attributes that store additional information like metadata or instructions
+
+
+│
+├── id
+│   ├── Meaning → Unique identifier 
+│   ├── Example → <div id="price">
+│   └── Use → Find one specific (individual) element
+│
+├── class
+│   ├── Meaning → Group of similar elements
+│   ├── Example → <p class="product">
+│   └── Use → Find multiple similar elements
+│
+├── href
+│   ├── Meaning → Hyperlink URL
+│   ├── Example → <a href="/about">
+│   └── Use → Extract links
+│
+├── src
+│   ├── Meaning → Source URL
+│   ├── Example → <img src="image.jpg">
+│   └── Use → Extract image/video URLs
+│
+├── alt
+│   ├── Meaning → Alternative text
+│   ├── Example → <img alt="Logo">
+│   └── Use → Get image description
+│
+├── title
+│   ├── Meaning → Tooltip text
+│   ├── Example → <a title="Profile">
+│   └── Use → Extract extra information
+│
+├── name
+│   ├── Meaning → Form field name
+│   ├── Example → <input name="email">
+│   └── Use → Locate form inputs
+│
+├── value
+│   ├── Meaning → Input value
+│   ├── Example → <input value="John">
+│   └── Use → Read default/current value
+│
+├── type
+│   ├── Meaning → Input type
+│   ├── Example → <input type="text">
+│   └── Use → Identify form controls
+│
+├── placeholder
+│   ├── Meaning → Hint inside input
+│   ├── Example → <input placeholder="Search">
+│   └── Use → Identify input fields
+│
+├── data-*
+│   ├── Meaning → Custom data attribute
+│   ├── Example → <div data-id="101">
+│   └── Use → Extract hidden IDs/metadata
+│
+├── aria-label
+│   ├── Meaning → Accessibility label
+│   ├── Example → <button aria-label="Search">
+│   └── Use → Locate elements without id/class
+│
+├── role
+│   ├── Meaning → Accessibility role
+│   ├── Example → <button role="button">
+│   └── Use → Identify element purpose
+│
+└── style
+    ├── Meaning → Inline CSS
+    ├── Example → <p style="color:red">
+    └── Use → Filter elements by style (rare)
+
+
+
+    Web Scraping
+│
+├── id      → One unique element
+├── class   → Multiple similar elements
+├── href    → Links
+├── src     → Images & media
+├── data-*  → Hidden data
+├── name    → Forms
+└── aria-label → Accessibility selectors
