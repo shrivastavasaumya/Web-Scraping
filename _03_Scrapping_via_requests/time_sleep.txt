@@ -1,0 +1,37 @@
+time.sleep() :-
+------------
+
+In Python web scraping, time.sleep() is used to pause the program for a specified number of seconds before continuing.
+
+
+Why use time.sleep() in Web Scraping?
+    Prevent sending too many requests too quickly.
+    Avoid overloading the website.
+    Reduce the chance of being blocked.
+    Mimic human browsing behavior.
+    Wait for a server before making the next request.
+
+
+Syntax:-
+
+import time
+time.sleep(seconds) # seconds → Number of seconds to pause the program.
+
+
+Flow :-
+-----
+
+Start
+  │
+  ▼
+Send Request
+  │
+  ▼
+Receive Response
+  │
+  ▼
+time.sleep(3)
+  │
+  │  (Program pauses for 3 seconds)
+  ▼
+Next Request
