@@ -1,0 +1,44 @@
+Headers in Web Scraping (requests):-
+----------------------------------
+
+Headers are extra information sent along with an HTTP request. They tell the server who is making the request, what type of data is accepted, the preferred language, and more.
+
+Why are Headers Used?
+    Identify the client (browser, script, mobile app, etc.)
+    Specify the type of content accepted
+    Provide authentication (API keys, tokens)
+    Avoid being blocked by websites
+    Mimic a real web browser during web scraping
+
+
+Syntax:-
+
+        import requests
+        
+        headers = {
+            "User-Agent": "Mozilla/5.0"
+        }
+        
+        response = requests.get(URL, headers=headers)
+        
+
+What happens?
+requests sends its default User-Agent ---> python-requests/2.xx.x
+
+
+Some websites detect this and may:-
+    Block the request
+    Return different content
+    Show a CAPTCHA
+
+
+Common HTTP Headers
+
+| Header            | Purpose                          | Example                |
+| ----------------- | -------------------------------- | ---------------------- |
+| `User-Agent`      | Identifies the browser/client    | `"Mozilla/5.0"`        |
+| `Accept`          | Content types the client accepts | `"text/html"`          |
+| `Accept-Language` | Preferred language               | `"en-US,en;q=0.9"`     |
+| `Referer`         | Previous page URL                | `"https://google.com"` |
+| `Authorization`   | Authentication token/API key     | `"Bearer <token>"`     |
+| `Cookie`          | Sends session cookies            | `"sessionid=abc123"`   |
