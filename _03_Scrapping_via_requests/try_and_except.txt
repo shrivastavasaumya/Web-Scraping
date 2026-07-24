@@ -1,0 +1,37 @@
+try and except :-
+---------------
+
+try and except are used in the requests library to handle errors gracefully, such as network issues, invalid URLs, timeouts, or HTTP errors.
+
+Syntax -
+
+        import requests
+        
+        try:
+            response = requests.get("https://example.com")
+            print(response.status_code)
+        
+        except Exception as e:
+            print("Error:", e)
+
+
+try :-
+│
+├── requests.get()
+├── response.raise_for_status()
+├── response.json()
+│
+└── Success → Process data
+
+except RequestException :-
+│
+└── Handle all request-related errors
+
+
+| Exception                              | Meaning                                                |
+| -------------------------------------- | ------------------------------------------------------ |
+| `requests.exceptions.ConnectionError`  | Unable to connect to the server                        |
+| `requests.exceptions.Timeout`          | Request took too long                                  |
+| `requests.exceptions.HTTPError`        | HTTP error (404, 500, etc.) after `raise_for_status()` |
+| `requests.exceptions.TooManyRedirects` | Too many redirects                                     |
+| `requests.exceptions.RequestException` | Base class that catches all request-related errors     |
