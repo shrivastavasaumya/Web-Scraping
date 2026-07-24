@@ -1,0 +1,27 @@
+| Method                     | Returns                                       | Use Case                        | Example                            |
+| -------------------------- | --------------------------------------------- | ------------------------------- | ---------------------------------- |
+| `find()`                   | First matching tag (element)                  | Find a single element           | `soup.find("h1")`                  |
+| `find_all()`               | List (`ResultSet`) of all matching tags       | Find multiple elements          | `soup.find_all("p")`               |
+| `find_parent()`            | First matching parent                         | Find the nearest parent         | `tag.find_parent("div")`           |
+| `find_parents()`           | List of all matching parents                  | Find all ancestor elements      | `tag.find_parents("section")`      |
+| `find_next()`              | First matching element after the current tag  | Search forward in the document  | `tag.find_next("p")`               |
+| `find_all_next()`          | All matching elements after the current tag   | Find all following elements     | `tag.find_all_next("a")`           |
+| `find_previous()`          | First matching element before the current tag | Search backward in the document | `tag.find_previous("h2")`          |
+| `find_all_previous()`      | All matching elements before the current tag  | Find all previous elements      | `tag.find_all_previous("div")`     |
+| `find_next_sibling()`      | First matching sibling after the current tag  | Find the next sibling           | `tag.find_next_sibling("p")`       |
+| `find_next_siblings()`     | All matching siblings after the current tag   | Find all following siblings     | `tag.find_next_siblings("li")`     |
+| `find_previous_sibling()`  | First matching sibling before the current tag | Find the previous sibling       | `tag.find_previous_sibling("li")`  |
+| `find_previous_siblings()` | All matching siblings before the current tag  | Find all previous siblings      | `tag.find_previous_siblings("li")` |
+
+#    get_text()	     |  tag.get_text()	                   |   Extracts all text from a tag	         |   tag.get_text()
+
+# CSS selectors
+
+select()         | soup.select("div p")	            |   Finds elements using CSS selectors	    |   soup.select(".title")
+select_one()     | soup.select_one("#main")	        |   Returns the first CSS selector match	|   soup.select_one("h2")
+
+
+# Attributes
+
+get()	         |  tag.get("href")	                   |   Gets an attribute value	             |   a.get("href")
+.attrs           |  Dictionary of all HTML attributes  |   extracts all attributes               |   tag.attrs
