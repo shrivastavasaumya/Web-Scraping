@@ -1,0 +1,35 @@
+BeautifulSoup :-
+
+It helps parse HTML and XML documents making it easy to navigate and extract specific parts of a webpage downloaded via requests.
+It creates a Parse tree from the data from which we can extract text, attributes, links, tables, etc.
+
+BeautifulSoup Object (parse tree)
+|
+html
+│
+├── head
+│   └── title
+│
+└── body
+    ├── h1
+    ├── p
+    └── a
+
+
+Parent-Child Relationship :-
+
+html → Parent of head and body
+body → Parent of h1, p, and a
+h1, p, a → Children of body
+title → Child of head
+
+
+Parts of the Tree :-
+------------------
+
+| Part                     | Meaning                 | Example               |
+| ------------------------ | ----------------------- | --------------------- |
+| **BeautifulSoup Object** | Root of the document    | `soup`                |
+| **Tag**                  | HTML element            | `<body>`, `<p>`       |
+| **Attribute**            | Information about a tag | `href`, `class`, `id` |
+| **String**               | Text inside a tag       | `"Welcome"`           |
